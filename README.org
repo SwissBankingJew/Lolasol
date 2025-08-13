@@ -2,13 +2,13 @@
 Implementing a low latency arbitrage bot for Solana dex's.
 
 ** Design Principles
-- Mechanical Sympathy
+- *Mechanical Sympathy*
   Work with hardware, not against it
-- Zero-Copy Architecture
+- *Zero-Copy Architecture*
   Data flows from NIC to decision without copies
-- Cache-Aware Design
+- *Cache-Aware Design*
   Optimize for L1/L2/L# cache hierarchy
-- Predictable Latency
+- *Predictable Latency*
   Prefer consistent 50μs over variable 10-100μs
 
 ** Compute & Hardware
