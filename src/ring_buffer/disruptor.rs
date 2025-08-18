@@ -1,6 +1,5 @@
 use std::{cell::UnsafeCell, error::Error, sync::atomic::{fence, AtomicUsize, Ordering}};
 
-
 pub struct RingBuffer<T> {
     buffer: UnsafeCell<Vec<T>>,
     size: usize
@@ -64,7 +63,6 @@ pub enum ReadValue<T: 'static> {
     Straight(&'static [T]),
     Wrapped((&'static [T],&'static [T]))
 }
-
 
 pub fn read<T>(disruptor: &'static Disruptor<T>, consumer: &Consumer) -> ReadValue<T> {
     // busy spin
