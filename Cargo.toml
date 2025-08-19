@@ -10,7 +10,7 @@ core_affinity = "0.8"
 
 [[bin]]
 name = "ring_buffer_bench"
-path = "benchmarks/ring_buffer_bench.rs"
+path = "benchmarks/ring_buffer.rs"
 
 [lib]
 name = "lolasol"
